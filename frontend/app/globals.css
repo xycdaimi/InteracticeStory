@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Source Serif 4", Georgia, "Noto Serif SC", serif;
+  --background: 40 33% 96%;
+  --foreground: 210 40% 12%;
+  --card: 40 40% 98%;
+  --card-foreground: 210 40% 12%;
+  --primary: 198 72% 28%;
+  --primary-foreground: 40 40% 98%;
+  --secondary: 38 28% 90%;
+  --secondary-foreground: 210 30% 20%;
+  --muted: 40 20% 92%;
+  --muted-foreground: 210 12% 40%;
+  --accent: 12 68% 48%;
+  --accent-foreground: 40 40% 98%;
+  --border: 35 18% 82%;
+  --input: 35 18% 82%;
+  --ring: 198 72% 28%;
+  --radius: 0.75rem;
+}
+
+body {
+  color: hsl(var(--foreground));
+  background:
+    radial-gradient(1200px 600px at 10% -10%, hsl(198 50% 88% / 0.55), transparent 55%),
+    radial-gradient(900px 500px at 90% 0%, hsl(12 60% 90% / 0.45), transparent 50%),
+    linear-gradient(180deg, hsl(40 40% 97%), hsl(38 28% 93%));
+  min-height: 100vh;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
